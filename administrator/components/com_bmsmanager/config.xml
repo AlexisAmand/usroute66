@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params>
+		<param name="paths" type="text" default="images" label="PARAM_FOLDERS" description="PARAM_FOLDERS_DESC" />
+		<param name="frontend_upload" type="radio" default="0" label="PARAM_FUPLOAD" description="PARAM_FUPLOAD_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="debug" type="radio" default="0" label="PARAM_DEBUG" description="PARAM_DEBUG_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+	</params>
+</config>

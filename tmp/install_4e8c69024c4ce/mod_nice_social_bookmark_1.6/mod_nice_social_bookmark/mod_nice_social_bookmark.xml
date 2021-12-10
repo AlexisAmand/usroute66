@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6.0" client="site" method="upgrade">
+    <name>Nice Social Bookmark</name>
+    <author>Nikola Biškup</author>
+    <creationDate>August 2011</creationDate>
+    <copyright>Copyright (C) 2011</copyright>
+    <license>GNU General Public License version 2 or later</license>
+    <authorEmail>nikola@salamander-studios.com</authorEmail>
+    <authorUrl>www.salamander-studios.com</authorUrl>
+    <version>1.6.2</version>
+    <description>Joomla 1.6 module for displaying links to most common social sites.</description>
+	<files>
+        <folder module="mod_nice_social_bookmark">icons</folder>
+        <folder module="mod_nice_social_bookmark">css</folder>
+        <filename module="mod_nice_social_bookmark">mod_nice_social_bookmark.php</filename>
+        <filename module="mod_nice_social_bookmark">mod_nice_social_bookmark.xml</filename>
+    </files>
+    
+    <help key="JHELP_EXTENSIONS_MODULE_MANAGER_WEBLINKS" />
+    
+	<config>
+	   <fields name="params">
+			<fieldset name="basic">
+        <field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />	
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+        <field name="isize" type="radio" label="Icon Size" default="32" description="Size of icons to be displayed">
+		<option value="24">24px</option>
+		<option value="32">32px</option>
+		<option value="48">48px</option>
+		<option value="64">64px</option>
+   	</field>
+	<field name="iset" type="list" default="aqu" label="Icon Set" description="Set of icons to be desplayed, u can check icons on website">
+		<option value="aqu">Aquatic</option>
+		<option value="ora">Orange round</option>
+		<option value="log">Logorunner</option>
+		<option value="rou">White round</option>
+		<option value="gls">Glass</option>
+		<option value="iph">IPhone</option>
+	</field>
+	<field name="iposition" type="list" default="center" label="Icon position" description="Set positioin of icons to be desplayed">
+		<option value="left">Left</option>
+		<option value="center">Center</option>
+		<option value="right">Right</option>
+	</field>
+	<field name="s1" type="radio" label="Facebook" default="yes" description="Display the icon of Facebook?">
+		<option value="yes">Yes</option>
+		<option value="no">No</option>
+   	</field>
+	<field name="s2" type="radio" label="MySpace" default="yes" description="Display the icon of MySpace?">
+		<option value="yes">Yes</option>
+		<option value="no">No</option>
+   	</field>
+	<field name="s3" type="radio" label="Twitter" default="yes" description="Display the icon of Twitter?">
+		<option value="yes">Yes</option>
+		<option value="no">No</option>
+   	</field>
+	<field name="s4" type="radio" label="Digg" default="yes" description="Display the icon of Digg?">
+		<option value="yes">Yes</option>
+		<option value="no">No</option>
+   	</field>
+	<field name="s5" type="radio" label="Delicious" default="yes" description="Display the icon of Delicious?">
+		<option value="yes">Yes</option>
+		<option value="no">No</option>
+   	</field>
+	<field name="s6" type="radio" label="Stumbleupon" default="yes" description="Display the icon of Stumbleupon?">
+		<option value="yes">Yes</option>
+		<option value="no">No</option>
+   	</field>
+	<field name="s7" type="radio" label="Google Bookmarks" default="yes" description="Display the icon of Google Bookmarks?">
+		<option value="yes">Yes</option>
+		<option value="no">No</option>
+   	</field>
+	<field name="s8" type="radio" label="Reddit" default="yes" description="Display the icon of Reddit?">
+		<option value="yes">Yes</option>
+		<option value="no">No</option>
+   	</field>
+	<field name="s9" type="radio" label="Newsvine" default="yes" description="Display the icon of Newsvine?">
+		<option value="yes">Yes</option>
+		<option value="no">No</option>
+   	</field>
+	<field name="s10" type="radio" label="Technorati" default="yes" description="Display the icon of Technorati?">
+		<option value="yes">Yes</option>
+		<option value="no">No</option>
+   	</field>
+	<field name="s11" type="radio" label="LinkedIn" default="yes" description="Display the icon of LinkedIn?">
+		<option value="yes">Yes</option>
+		<option value="no">No</option>
+   	</field>
+	<field name="s12" type="radio" label="Mixx" default="yes" description="Display the icon of Mixx?">
+		<option value="yes">Yes</option>
+		<option value="no">No</option>
+   	</field>
+	<field name="s14" type="radio" label="RSS Feed" default="yes" description="Display the icon of RSS Feed?">
+		<option value="yes">Yes</option>
+		<option value="no">No</option>
+   	</field>		
+	<field name="@spacer" type="spacer" default="" label="" description="" />
+	<field name="opac" type="radio" label="Mouseover effect" default="no" description="Mouseover opacity effect, you can choose two different effects normal and inverted opacity">
+		<option value="yes">Yes</option>
+		<option value="no">No</option>
+		<option value="invert">Invert opacity</option>
+   	</field>	
+	<field name="@spacer" type="spacer" default="" label="" description="" />
+	<field name="twlink" type="text" default="" label="Twitter Page Link" description="Enter here your twitter page link if you want to change default status update feature (no http://)" />	
+	<field name="fblink" type="text" default="" label="Facebook Page Link" description="Enter here your facebook page link if you want to change default status update feature (no http://)" />	
+	<field name="mslink" type="text" default="" label="My Space Page Link" description="Enter here your myspace page link if you want to change default status update feature (no http://)" />
+	<field name="lilink" type="text" default="" label="LinkedIn Page Link" description="Enter here your linkedin page link if you want to change default status update feature (no http://)" />
+	<field name="rsslink" type="text" default="" label="RSS Page Link" description="Enter here your rss page link if you want to change default rss link (no http://)" />
+    			</fieldset>
+		</fields>
+    </config>
+</extension>

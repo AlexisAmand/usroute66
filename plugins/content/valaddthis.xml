@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content" method="upgrade">
+	<name>ValAddThis</name>
+	<author>Chrysovalantis Mochlas / www.valandis.de</author>
+	<creationDate>October 2011</creationDate>
+	<copyright>Copyright (C) 2010-2011 Val Web Design</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>valandis@valandis.de</authorEmail>
+	<authorUrl>http://www.valandis.de</authorUrl>
+	<version>1.5.3</version>
+	<description>PLG_CONTENT_VALADDTHIS_XML_DESCRIPTION</description>
+
+	<!-- supported languages -->
+	<languages folder="language">
+		<language tag="en-GB">en-GB.plg_content_valaddthis.ini</language>
+		<language tag="en-GB">en-GB.plg_content_valaddthis.sys.ini</language>
+		<language tag="el-GR">el-GR.plg_content_valaddthis.ini</language>
+		<language tag="el-GR">el-GR.plg_content_valaddthis.sys.ini</language>
+		<language tag="de-DE">de-DE.plg_content_valaddthis.ini</language>
+		<language tag="de-DE">de-DE.plg_content_valaddthis.sys.ini</language>
+	</languages>
+
+	<!-- plugin's files -->
+	<files>
+		<filename plugin="valaddthis">valaddthis.php</filename>
+		<filename>index.html</filename>
+		<filename>valaddthis/index.html</filename>
+		<filename>valaddthis/css/default.css</filename>
+		<filename>valaddthis/css/default32.css</filename>
+		<filename>valaddthis/css/vertical.css</filename>
+		<filename>valaddthis/css/vertical32.css</filename>
+		<filename>valaddthis/css/horizontal.css</filename>
+		<filename>valaddthis/css/vertical1.css</filename>
+		<filename>valaddthis/css/vertical2.css</filename>
+		<filename>valaddthis/css/user.css</filename>
+		<filename>valaddthis/css/index.html</filename>
+		<filename>valaddthis/images/index.html</filename>
+		<filename>valaddthis/images/addthis-long.gif</filename>
+		<filename>valaddthis/images/addthis-short.gif</filename>
+		<filename>valaddthis/images/bm-long.gif</filename>
+		<filename>valaddthis/images/bm-short.gif</filename>
+		<filename>valaddthis/images/plus-small.gif</filename>
+		<filename>valaddthis/images/email-short.gif</filename>
+		<filename>valaddthis/images/rss-feed-big.gif</filename>
+		<filename>valaddthis/images/rss-feed-long.gif</filename>
+		<filename>valaddthis/images/rss-feed-short.gif</filename>
+		<filename>valaddthis/images/share-long.gif</filename>
+		<filename>valaddthis/images/share-short.gif</filename>
+		<filename>valaddthis/images/subscribe-big.gif</filename>
+		<filename>valaddthis/images/subscribe-long.gif</filename>
+		<filename>valaddthis/images/subscribe-short.gif</filename>
+		<filename>valaddthis/images/share-counter.gif</filename>
+		<filename>valaddthis/images/quick1.gif</filename>
+		<filename>valaddthis/images/quick2.gif</filename>
+		<filename>valaddthis/images/quick3.gif</filename>
+		<filename>valaddthis/images/quick4.gif</filename>
+		<filename>valaddthis/images/quick5.gif</filename>
+		<filename>valaddthis/images/quick6.gif</filename>
+		<filename>valaddthis/images/quick7.gif</filename>
+		<filename>valaddthis/images/quick8.gif</filename>
+		<filename>valaddthis/images/quick9.gif</filename>
+		<filename>valaddthis/images/quick10.gif</filename>
+		<filename>valaddthis/images/quick11.gif</filename>
+		<filename>valaddthis/images/quick12.gif</filename>
+		<filename>valaddthis/images/add_to_fav_20.png</filename>
+		<filename>valaddthis/images/add_to_fav_32.png</filename>
+	</files>
+
+	<!-- plugin's parameters for J1.5 -->
+	<params>
+
+		<!-- general parameters -->
+		<param name="plugin_class" type="text" default="" label="PLG_CONTENT_VALADDTHIS_PLUGIN_CSS_CLASS_L" description="PLG_CONTENT_VALADDTHIS_PLUGIN_CSS_CLASS_D" />
+		<param name="addthis_pub" type="text" default="" label="PLG_CONTENT_VALADDTHIS_ADDTHIS_ID_L" description="PLG_CONTENT_VALADDTHIS_ADDTHIS_ID_D" />
+		<param name="secure_server" type="radio" default="1" label="PLG_CONTENT_VALADDTHIS_SSERVER_L" description="PLG_CONTENT_VALADDTHIS_SSERVER_D">
+			<option value="0">PLG_CONTENT_VALADDTHIS_YES</option>
+			<option value="1">PLG_CONTENT_VALADDTHIS_NO</option>
+		</param>
+		<param name="addthis_type" type="radio" default="0" label="PLG_CONTENT_VALADDTHIS_ADDTHIS_TYPE_L" description="PLG_CONTENT_VALADDTHIS_ADDTHIS_TYPE_D">
+			<option value="0">PLG_CONTENT_VALADDTHIS_BUTTON</option>
+			<option value="1">PLG_CONTENT_VALADDTHIS_TOOLBOX</option>
+		</param>
+		<param name="addthis_type_cat" type="radio" default="0" label="PLG_CONTENT_VALADDTHIS_ADDTHIS_TYPECAT_L" description="PLG_CONTENT_VALADDTHIS_ADDTHIS_TYPECAT_D">
+			<option value="0">PLG_CONTENT_VALADDTHIS_BUTTON</option>
+			<option value="1">PLG_CONTENT_VALADDTHIS_TOOLBOX</option>
+		</param>
+		<param name="addthis_type_sec" type="radio" default="0" label="PLG_CONTENT_VALADDTHIS_ADDTHIS_TYPESEC_L" description="PLG_CONTENT_VALADDTHIS_ADDTHIS_TYPESEC_D">
+			<option value="0">PLG_CONTENT_VALADDTHIS_BUTTON</option>
+			<option value="1">PLG_CONTENT_VALADDTHIS_TOOLBOX</option>
+		</param>
+		<param name="addthis_type_front" type="radio" default="0" label="PLG_CONTENT_VALADDTHIS_ADDTHIS_TYPEFRONT_L" description="PLG_CONTENT_VALADDTHIS_ADDTHIS_TYPEFRONT_D">
+			<option value="0">PLG_CONTENT_VALADDTHIS_BUTTON</option>
+			<option value="1">PLG_CONTENT_VALADDTHIS_TOOLBOX</option>
+		</param>
+		<param name="addthis_position" type="radio" default="0" label="PLG_CONTENT_VALADDTHIS_ADDTHIS_POSITION_L" description="PLG_CONTENT_VALADDTHIS_ADDTHIS_POSITION_D">
+			<option value="0">PLG_CONTENT_VALADDTHIS_TOP</option>
+			<option value="1">PLG_CONTENT_VALADDTHIS_BOTTOM</option>
+			<option value="2">PLG_CONTENT_VALADDTHIS_BOTH</option>
+		</param>
+		<param name="show_cat" type="radio" default="0" label="PLG_CONTENT_VALADDTHIS_SHOWCAT_L" description="PLG_CONTENT_VALADDTHIS_SHOWCAT_D">
+			<option value="0">PLG_CONTENT_VALADDTHIS_YES</option>
+			<option value="1">PLG_CONTENT_VALADDTHIS_NO</option>
+		</param>
+		<param name="show_sec" type="radio" default="0" label="PLG_CONTENT_VALADDTHIS_SHOWSEC_L" description="PLG_CONTENT_VALADDTHIS_SHOWSEC_D">
+			<option value="0">PLG_CONTENT_VALADDTHIS_YES</option>
+			<option value="1">PLG_CONTENT_VALADDTHIS_NO</option>
+		</param>
+		<param name="show_front" type="radio" default="0" label="PLG_CONTENT_VALADDTHIS_SHOWFRONT_L" description="PLG_CONTENT_VALADDTHIS_SHOWFRONT_D">
+			<option value="0">PLG_CONTENT_VALADDTHIS_YES</option>
+			<option value="1">PLG_CONTENT_VALADDTHIS_NO</option>
+		</param>
+		<param name="filter_art" type="text" default="" label="PLG_CONTENT_VALADDTHIS_FILTERART_L" description="PLG_CONTENT_VALADDTHIS_FILTERART_D" size="50" />
+		<param name="filter_cat" type="text" default="" label="PLG_CONTENT_VALADDTHIS_FILTERCAT_L" description="PLG_CONTENT_VALADDTHIS_FILTERCAT_D" size="50" />
+		<param name="filter_sec" type="text" default="" label="PLG_CONTENT_VALADDTHIS_FILTERSEC_L" description="PLG_CONTENT_VALADDTHIS_FILTERSEC_D" size="50" />
+		<param name="html_before" type="textarea" default="" label="PLG_CONTENT_VALADDTHIS_HTMLBEFORE_L" description="PLG_CONTENT_VALADDTHIS_HTMLBEFORE_D" rows="3" cols="35" />
+		<param name="html_after" type="textarea" default="" label="PLG_CONTENT_VALADDTHIS_HTMLAFTER_L" description="PLG_CONTENT_VALADDTHIS_HTMLAFTER_D" rows="3" cols="35" />
+	</params>
+	
+	<params group="advanced">
+		<!-- global parameters -->
+		<param type="spacer" default="PLG_CONTENT_VALADDTHIS_HEADER_GLOBAL" />
+		<param name="services_compact" type="text" default="" label="PLG_CONTENT_VALADDTHIS_COMPACTSERV_L" description="PLG_CONTENT_VALADDTHIS_COMPACTSERV_D" size="50" />
+		<param name="services_expanded" type="text" default="" label="PLG_CONTENT_VALADDTHIS_EXPANDSERV_L" description="PLG_CONTENT_VALADDTHIS_EXPANDSERV_D" size="50" />
+		<param name="services_exclude" type="text" default="" label="PLG_CONTENT_VALADDTHIS_EXCLUDESERV_L" description="PLG_CONTENT_VALADDTHIS_EXCLUDESERV_D" size="50" />
+		<param name="ui_use_css" type="radio" default="1" label="PLG_CONTENT_VALADDTHIS_USECSS_L" description="PLG_CONTENT_VALADDTHIS_USECSS_D">
+			<option value="1">PLG_CONTENT_VALADDTHIS_YES</option>
+			<option value="0">PLG_CONTENT_VALADDTHIS_NO</option>
+		</param>
+		<param name="ui_use_addressbook" type="radio" default="0" label="PLG_CONTENT_VALADDTHIS_USEBOOK_L" description="PLG_CONTENT_VALADDTHIS_USEBOOK_D">
+			<option value="1">PLG_CONTENT_VALADDTHIS_YES</option>
+			<option value="0">PLG_CONTENT_VALADDTHIS_NO</option>
+		</param>
+		<param name="data_track_linkback" type="radio" default="0" label="PLG_CONTENT_VALADDTHIS_DATATRACK_L" description="PLG_CONTENT_VALADDTHIS_DATATRACK_D">
+			<option value="1">PLG_CONTENT_VALADDTHIS_YES</option>
+			<option value="0">PLG_CONTENT_VALADDTHIS_NO</option>
+		</param>
+		<param name="data_use_flash" type="radio" default="1" label="PLG_CONTENT_VALADDTHIS_USEFLASH_L" description="PLG_CONTENT_VALADDTHIS_USEFLASH_D">
+			<option value="1">PLG_CONTENT_VALADDTHIS_YES</option>
+			<option value="0">PLG_CONTENT_VALADDTHIS_NO</option>
+		</param>
+		<param name="data_use_cookies" type="radio" default="1" label="PLG_CONTENT_VALADDTHIS_USECOOKIES_L" description="PLG_CONTENT_VALADDTHIS_USECOOKIES_D">
+			<option value="1">PLG_CONTENT_VALADDTHIS_YES</option>
+			<option value="0">PLG_CONTENT_VALADDTHIS_NO</option>
+		</param>
+		<param name="ui_use_embeddable_services_beta" type="radio" default="0" label="PLG_CONTENT_VALADDTHIS_USE_EMBED_L" description="PLG_CONTENT_VALADDTHIS_USE_EMBED_D">
+			<option value="1">PLG_CONTENT_VALADDTHIS_YES</option>
+			<option value="0">PLG_CONTENT_VALADDTHIS_NO</option>
+		</param>
+		<param name="data_ga_tracker" type="radio" default="0" label="PLG_CONTENT_VALADDTHIS_USE_GATRACK_L" description="PLG_CONTENT_VALADDTHIS_USE_GATRACK_D">
+			<option value="1">PLG_CONTENT_VALADDTHIS_YES</option>
+			<option value="0">PLG_CONTENT_VALADDTHIS_NO</option>
+		</param>
+		<param name="ga_tracker_object" type="text" default="" label="PLG_CONTENT_VALADDTHIS_GATRACK_L" description="PLG_CONTENT_VALADDTHIS_GATRACK_D" />
+		<param type="spacer" default="" />
+		<param name="ui_header_color" type="text" default="" label="PLG_CONTENT_VALADDTHIS_ADDTHIS_HEADERCOLOR_L" description="PLG_CONTENT_VALADDTHIS_ADDTHIS_HEADERCOLOR_D" />
+		<param name="ui_header_background" type="text" default="" label="PLG_CONTENT_VALADDTHIS_ADDTHIS_HEADERBACKG_L" description="PLG_CONTENT_VALADDTHIS_ADDTHIS_HEADERBACKG_D" />
+		<param name="ui_cobrand" type="text" default="" label="PLG_CONTENT_VALADDTHIS_ADDTHIS_BRAND_L" description="PLG_CONTENT_VALADDTHIS_ADDTHIS_BRAND_D" size="50" />
+		<param name="ui_offset_top" type="text" default="" label="PLG_CONTENT_VALADDTHIS_OFFSET_TOP_L" description="PLG_CONTENT_VALADDTHIS_OFFSET_TOP_D" />
+		<param name="ui_offset_left" type="text" default="" label="PLG_CONTENT_VALADDTHIS_OFFSET_LEFT_L" description="PLG_CONTENT_VALADDTHIS_OFFSET_LEFT_D" />
+		<param name="ui_hover_direction" type="radio" default="0" label="PLG_CONTENT_VALADDTHIS_HOVERDIR_L" description="PLG_CONTENT_VALADDTHIS_HOVERDIR_D">
+			<option value="0">PLG_CONTENT_VALADDTHIS_DIR1</option>
+			<option value="1">PLG_CONTENT_VALADDTHIS_DIR2</option>
+			<option value="-1">PLG_CONTENT_VALADDTHIS_DIR3</option>
+		</param>
+		<param name="ui_delay" type="text" default="" label="PLG_CONTENT_VALADDTHIS_HOVER_DELAY_L" description="PLG_CONTENT_VALADDTHIS_HOVER_DELAY_D" />
+
+		<!-- language parameters -->
+		<param type="spacer" default="PLG_CONTENT_VALADDTHIS_HEADER_LANGUAGE" />
+		<param name="ui_language" type="text" default="" label="PLG_CONTENT_VALADDTHIS_UILANG_L" description="PLG_CONTENT_VALADDTHIS_UILANG_D" />
+		<param name="text_share_caption" type="text" default="" label="PLG_CONTENT_VALADDTHIS_TEXTSHARE_L" description="PLG_CONTENT_VALADDTHIS_TEXTSHARE_D" size="50" />
+		<param name="text_email_caption" type="text" default="" label="PLG_CONTENT_VALADDTHIS_TEXTEMCAPT_L" description="PLG_CONTENT_VALADDTHIS_TEXTEMCAPT_D" size="50" />
+		<param name="text_email" type="text" default="" label="PLG_CONTENT_VALADDTHIS_EMAIL_L" description="PLG_CONTENT_VALADDTHIS_EMAIL_D" size="50" />
+		<param name="text_favorites" type="text" default="" label="PLG_CONTENT_VALADDTHIS_FAVORITES_L" description="PLG_CONTENT_VALADDTHIS_FAVORITES_D" size="50" />
+		<param name="text_more" type="text" default="" label="PLG_CONTENT_VALADDTHIS_MORE_L" description="PLG_CONTENT_VALADDTHIS_MORE_D" size="50" />
+
+		<!-- button parameters -->
+		<param type="spacer" default="PLG_CONTENT_VALADDTHIS_HEADER_BUTTON" />
+		<param name="button_type" type="radio" default="0" label="PLG_CONTENT_VALADDTHIS_BUTTON_TYPE_L" description="PLG_CONTENT_VALADDTHIS_BUTTON_TYPE_D">
+			<option value="0">PLG_CONTENT_VALADDTHIS_BUTTON_TYPE1</option>
+			<option value="1">PLG_CONTENT_VALADDTHIS_BUTTON_TYPE2</option>
+			<option value="2">PLG_CONTENT_VALADDTHIS_BUTTON_TYPE3</option>
+		</param>
+		<param name="ui_click" type="list" default="0" label="PLG_CONTENT_VALADDTHIS_CLICK_L" description="PLG_CONTENT_VALADDTHIS_CLICK_D">
+			<option value="1">PLG_CONTENT_VALADDTHIS_M_CLICK</option>
+			<option value="0">PLG_CONTENT_VALADDTHIS_M_OVER</option>
+		</param>
+		<param name="custom_choice" type="list" default="0" label="PLG_CONTENT_VALADDTHIS_CUSTOM_CHOICE_L" description="PLG_CONTENT_VALADDTHIS_CUSTOM_CHOICE_D">
+			<option value="0">PLG_CONTENT_VALADDTHIS_CUSTOM_OPTION1</option>
+			<option value="1">PLG_CONTENT_VALADDTHIS_CUSTOM_OPTION2</option>
+			<option value="2">PLG_CONTENT_VALADDTHIS_CUSTOM_OPTION3</option>
+			<option value="3">PLG_CONTENT_VALADDTHIS_CUSTOM_OPTION4</option>
+		</param>
+		<param name="addthis_button" type="radio" default="0" label="PLG_CONTENT_VALADDTHIS_ADDTHIS_BUTTON_L" description="PLG_CONTENT_VALADDTHIS_ADDTHIS_BUTTON_D">
+			<option value="0"><![CDATA[ <img src="../plugins/content/valaddthis/images/addthis-long.gif"><br />]]></option>
+			<option value="1"><![CDATA[ <img src="../plugins/content/valaddthis/images/addthis-short.gif"><br />]]></option>
+			<option value="2"><![CDATA[ <img src="../plugins/content/valaddthis/images/bm-long.gif"><br />]]></option>
+			<option value="3"><![CDATA[ <img src="../plugins/content/valaddthis/images/bm-short.gif"><br />]]></option>
+			<option value="4"><![CDATA[ <img src="../plugins/content/valaddthis/images/share-long.gif"><br />]]></option>
+			<option value="5"><![CDATA[ <img src="../plugins/content/valaddthis/images/share-short.gif"><br />]]></option>
+			<option value="6"><![CDATA[ <img src="../plugins/content/valaddthis/images/plus-small.gif"><br />]]></option>
+			<option value="7"><![CDATA[ <img style="vertical-align:middle; margin-bottom:3px;" src="../plugins/content/valaddthis/images/rss-feed-big.gif"><br />]]></option>
+			<option value="8"><![CDATA[ <img src="../plugins/content/valaddthis/images/rss-feed-long.gif"><br />]]></option>
+			<option value="9"><![CDATA[ <img src="../plugins/content/valaddthis/images/rss-feed-short.gif"><br />]]></option>
+			<option value="10"><![CDATA[ <img style="vertical-align:middle; margin-bottom:3px;" src="../plugins/content/valaddthis/images/subscribe-big.gif"><br />]]></option>
+			<option value="11"><![CDATA[ <img src="../plugins/content/valaddthis/images/subscribe-long.gif"><br />]]></option>
+			<option value="12"><![CDATA[ <img src="../plugins/content/valaddthis/images/subscribe-short.gif"><br />]]></option>
+			<option value="13"><![CDATA[ <img src="../plugins/content/valaddthis/images/email-short.gif"><br />]]></option>
+			<option value="14"><![CDATA[ <img style="vertical-align:middle; margin-bottom:3px;" src="../plugins/content/valaddthis/images/share-counter.gif"><br />]]></option>
+		</param>
+		<param name="custom_button" type="text" default="" label="PLG_CONTENT_VALADDTHIS_CUSTOM_BUTTON_L" description="PLG_CONTENT_VALADDTHIS_CUSTOM_BUTTON_D" size="50" />
+		<param name="custom_text" type="text" default="" label="PLG_CONTENT_VALADDTHIS_CUSTOM_TEXT_L" description="PLG_CONTENT_VALADDTHIS_CUSTOM_TEXT_D" size="50" />
+		<param name="text_style" type="text" default="" label="PLG_CONTENT_VALADDTHIS_TEXT_STYLE_L" description="PLG_CONTENT_VALADDTHIS_TEXT_STYLE_D" size="50" />
+		<param name="alt_text" type="text" default="" label="PLG_CONTENT_VALADDTHIS_ALT_TEXT_L" description="PLG_CONTENT_VALADDTHIS_ALT_TEXT_D" size="50" />
+		<param name="rssfeed_url" type="text" default="" label="PLG_CONTENT_VALADDTHIS_FEED_URL_L" description="PLG_CONTENT_VALADDTHIS_FEED_URL_D" size="50" />
+
+		<!-- toolbox parameters -->
+		<param type="spacer" default="PLG_CONTENT_VALADDTHIS_HEADER_TOOLBOX" />
+		<param name="quick_toolbox" type="radio" default="0" label="PLG_CONTENT_VALADDTHIS_QUICKTOOLBOX_L" description="PLG_CONTENT_VALADDTHIS_QUICKTOOLBOX_D">
+			<option value="0">PLG_CONTENT_VALADDTHIS_OPTION_QUICK</option>
+			<option value="1"><![CDATA[ <img src="../plugins/content/valaddthis/images/quick1.gif"><br />]]></option>
+			<option value="2"><![CDATA[ <img src="../plugins/content/valaddthis/images/quick2.gif"><br />]]></option>
+			<option value="3"><![CDATA[ <img src="../plugins/content/valaddthis/images/quick3.gif"><br />]]></option>
+			<option value="4"><![CDATA[ <img src="../plugins/content/valaddthis/images/quick4.gif"><br />]]></option>
+			<option value="5"><![CDATA[ <img src="../plugins/content/valaddthis/images/quick5.gif"><br />]]></option>
+			<option value="6"><![CDATA[ <img src="../plugins/content/valaddthis/images/quick6.gif"><br />]]></option>
+			<option value="7"><![CDATA[ <img src="../plugins/content/valaddthis/images/quick7.gif"><br />]]></option>
+			<option value="8"><![CDATA[ <img src="../plugins/content/valaddthis/images/quick8.gif"><br />]]></option>
+			<option value="9"><![CDATA[ <img src="../plugins/content/valaddthis/images/quick9.gif"><br />]]></option>
+			<option value="10"><![CDATA[ <img src="../plugins/content/valaddthis/images/quick10.gif"><br />]]></option>
+			<option value="11"><![CDATA[ <img src="../plugins/content/valaddthis/images/quick11.gif"><br />]]></option>
+			<option value="12"><![CDATA[ <img style="vertical-align:middle; margin-bottom:3px;" src="../plugins/content/valaddthis/images/quick12.gif"><br />]]></option>
+		</param>
+		<param name="toolbox_services" type="text" default="" label="PLG_CONTENT_VALADDTHIS_TOOLSERV_L" description="PLG_CONTENT_VALADDTHIS_TOOLSERV_D" size="50" />
+		<param name="use_text_flag" type="radio" default="0" label="PLG_CONTENT_VALADDTHIS_USETEXT_L" description="PLG_CONTENT_VALADDTHIS_USETEXT_D">
+			<option value="1">PLG_CONTENT_VALADDTHIS_YES</option>
+			<option value="0">PLG_CONTENT_VALADDTHIS_NO</option>
+		</param>
+		<param name="use_nofollow" type="radio" default="0" label="PLG_CONTENT_VALADDTHIS_NOFOLLOW_L" description="PLG_CONTENT_VALADDTHIS_NOFOLLOW_D">
+			<option value="1">PLG_CONTENT_VALADDTHIS_YES</option>
+			<option value="0">PLG_CONTENT_VALADDTHIS_NO</option>
+		</param>
+		<param name="toolbox_style" type="list" default="default" label="PLG_CONTENT_VALADDTHIS_TOOLBOX_STYLE_L" description="PLG_CONTENT_VALADDTHIS_TOOLBOX_STYLE_D">
+			<option value="default">PLG_CONTENT_VALADDTHIS_STYLE_OPTION1</option>
+			<option value="default32">PLG_CONTENT_VALADDTHIS_STYLE_OPTION7</option>
+			<option value="vertical">PLG_CONTENT_VALADDTHIS_STYLE_OPTION2</option>
+			<option value="vertical32">PLG_CONTENT_VALADDTHIS_STYLE_OPTION8</option>
+			<option value="cssHorizontal">PLG_CONTENT_VALADDTHIS_STYLE_OPTION3</option>
+			<option value="cssVertical1">PLG_CONTENT_VALADDTHIS_STYLE_OPTION4</option>
+			<option value="cssVertical2">PLG_CONTENT_VALADDTHIS_STYLE_OPTION5</option>
+			<option value="cssUser">PLG_CONTENT_VALADDTHIS_STYLE_OPTION6</option>
+		</param>
+		<param name="toolbox_width" type="text" default="" label="PLG_CONTENT_VALADDTHIS_TOOLBOX_WIDTH_L" description="PLG_CONTENT_VALADDTHIS_TOOLBOX_WIDTH_D" />
+		<param name="toolbox_sharetext" type="text" default="" label="PLG_CONTENT_VALADDTHIS_TOOLBOX_SHARE_L" description="PLG_CONTENT_VALADDTHIS_TOOLBOX_SHARE_D" size="50" />
+		<param name="toolbox_shareurl" type="text" default="" label="PLG_CONTENT_VALADDTHIS_TOOLBOX_SHAREURL_L" description="PLG_CONTENT_VALADDTHIS_TOOLBOX_SHAREURL_D" size="50" />
+		<param name="tooltip_text" type="text" default="" label="PLG_CONTENT_VALADDTHIS_TOOLTIP_L" description="PLG_CONTENT_VALADDTHIS_TOOLTIP_D" size="50" />
+		<param name="use_more_flag" type="radio" default="0" label="PLG_CONTENT_VALADDTHIS_USEMORE_L" description="PLG_CONTENT_VALADDTHIS_USEMORE_D">
+			<option value="1">PLG_CONTENT_VALADDTHIS_YES</option>
+			<option value="0">PLG_CONTENT_VALADDTHIS_NO</option>
+		</param>
+		<param name="toolbox_more" type="text" default="" label="PLG_CONTENT_VALADDTHIS_TOOLBOX_MORE_L" description="PLG_CONTENT_VALADDTHIS_TOOLBOX_MORE_D" size="50" />
+		<param name="toolbox_separator" type="text" default="" label="PLG_CONTENT_VALADDTHIS_TOOLBOX_SEPARATOR_L" description="PLG_CONTENT_VALADDTHIS_TOOLBOX_SEPARATOR_D" />
+	</params>
+
+	<!-- plugin's parameters for J1.6 -->
+	<config>
+	<fields name="params">
+	<fieldset name="basic">
+		<!-- general parameters -->
+		<field name="plugin_class" type="text" default="" label="PLG_CONTENT_VALADDTHIS_PLUGIN_CSS_CLASS_L" description="PLG_CONTENT_VALADDTHIS_PLUGIN_CSS_CLASS_D" />
+		<field name="addthis_pub" type="text" default="" label="PLG_CONTENT_VALADDTHIS_ADDTHIS_ID_L" description="PLG_CONTENT_VALADDTHIS_ADDTHIS_ID_D" />
+		<field name="secure_server" type="radio" default="1" label="PLG_CONTENT_VALADDTHIS_SSERVER_L" description="PLG_CONTENT_VALADDTHIS_SSERVER_D">
+			<option value="0">PLG_CONTENT_VALADDTHIS_YES</option>
+			<option value="1">PLG_CONTENT_VALADDTHIS_NO</option>
+		</field>
+		<field name="addthis_type" type="radio" default="0" label="PLG_CONTENT_VALADDTHIS_ADDTHIS_TYPE_L" description="PLG_CONTENT_VALADDTHIS_ADDTHIS_TYPE_D">
+			<option value="0">PLG_CONTENT_VALADDTHIS_BUTTON</option>
+			<option value="1">PLG_CONTENT_VALADDTHIS_TOOLBOX</option>
+		</field>
+		<field name="addthis_type_cat" type="radio" default="0" label="PLG_CONTENT_VALADDTHIS_ADDTHIS_TYPECAT_L" description="PLG_CONTENT_VALADDTHIS_ADDTHIS_TYPECAT_D">
+			<option value="0">PLG_CONTENT_VALADDTHIS_BUTTON</option>
+			<option value="1">PLG_CONTENT_VALADDTHIS_TOOLBOX</option>
+		</field>
+		<field name="addthis_type_sec" type="radio" default="0" label="PLG_CONTENT_VALADDTHIS_ADDTHIS_TYPESEC_L" description="PLG_CONTENT_VALADDTHIS_ADDTHIS_TYPESEC_D">
+			<option value="0">PLG_CONTENT_VALADDTHIS_BUTTON</option>
+			<option value="1">PLG_CONTENT_VALADDTHIS_TOOLBOX</option>
+		</field>
+		<field name="addthis_type_front" type="radio" default="0" label="PLG_CONTENT_VALADDTHIS_ADDTHIS_TYPEFRONT_L" description="PLG_CONTENT_VALADDTHIS_ADDTHIS_TYPEFRONT_D">
+			<option value="0">PLG_CONTENT_VALADDTHIS_BUTTON</option>
+			<option value="1">PLG_CONTENT_VALADDTHIS_TOOLBOX</option>
+		</field>
+		<field name="addthis_position" type="radio" default="0" label="PLG_CONTENT_VALADDTHIS_ADDTHIS_POSITION_L" description="PLG_CONTENT_VALADDTHIS_ADDTHIS_POSITION_D">
+			<option value="0">PLG_CONTENT_VALADDTHIS_TOP</option>
+			<option value="1">PLG_CONTENT_VALADDTHIS_BOTTOM</option>
+			<option value="2">PLG_CONTENT_VALADDTHIS_BOTH</option>
+		</field>
+		<field name="show_cat" type="radio" default="0" label="PLG_CONTENT_VALADDTHIS_SHOWCAT_L" description="PLG_CONTENT_VALADDTHIS_SHOWCAT_D">
+			<option value="0">PLG_CONTENT_VALADDTHIS_YES</option>
+			<option value="1">PLG_CONTENT_VALADDTHIS_NO</option>
+		</field>
+		<field name="show_sec" type="radio" default="0" label="PLG_CONTENT_VALADDTHIS_SHOWSEC_L" description="PLG_CONTENT_VALADDTHIS_SHOWSEC_D">
+			<option value="0">PLG_CONTENT_VALADDTHIS_YES</option>
+			<option value="1">PLG_CONTENT_VALADDTHIS_NO</option>
+		</field>
+		<field name="show_front" type="radio" default="0" label="PLG_CONTENT_VALADDTHIS_SHOWFRONT_L" description="PLG_CONTENT_VALADDTHIS_SHOWFRONT_D">
+			<option value="0">PLG_CONTENT_VALADDTHIS_YES</option>
+			<option value="1">PLG_CONTENT_VALADDTHIS_NO</option>
+		</field>
+		<field name="filter_art" type="text" default="" label="PLG_CONTENT_VALADDTHIS_FILTERART_L" description="PLG_CONTENT_VALADDTHIS_FILTERART_D" size="50" />
+		<field name="filter_cat" type="text" default="" label="PLG_CONTENT_VALADDTHIS_FILTERCAT_L" description="PLG_CONTENT_VALADDTHIS_FILTERCAT_D" size="50" />
+		<field name="filter_sec" type="text" default="" label="PLG_CONTENT_VALADDTHIS_FILTERSEC_L" description="PLG_CONTENT_VALADDTHIS_FILTERSEC_D" size="50" />
+		<field name="html_before" type="textarea" default="" label="PLG_CONTENT_VALADDTHIS_HTMLBEFORE_L" description="PLG_CONTENT_VALADDTHIS_HTMLBEFORE_D" rows="3" cols="35" filter="raw" />
+		<field name="html_after" type="textarea" default="" label="PLG_CONTENT_VALADDTHIS_HTMLAFTER_L" description="PLG_CONTENT_VALADDTHIS_HTMLAFTER_D" rows="3" cols="35" filter="raw"/>
+	</fieldset>
+	</fields>
+	</config>
+	
+	<config>
+	<fields name="params">
+	<fieldset name="advanced">
+		<!-- global parameters -->
+		<field type="spacer" name="spacer1" label="PLG_CONTENT_VALADDTHIS_HEADER_GLOBAL" />
+		<field name="services_compact" type="text" default="" label="PLG_CONTENT_VALADDTHIS_COMPACTSERV_L" description="PLG_CONTENT_VALADDTHIS_COMPACTSERV_D" size="50" />
+		<field name="services_expanded" type="text" default="" label="PLG_CONTENT_VALADDTHIS_EXPANDSERV_L" description="PLG_CONTENT_VALADDTHIS_EXPANDSERV_D" size="50" />
+		<field name="services_exclude" type="text" default="" label="PLG_CONTENT_VALADDTHIS_EXCLUDESERV_L" description="PLG_CONTENT_VALADDTHIS_EXCLUDESERV_D" size="50" />
+		<field name="ui_use_css" type="radio" default="1" label="PLG_CONTENT_VALADDTHIS_USECSS_L" description="PLG_CONTENT_VALADDTHIS_USECSS_D">
+			<option value="1">PLG_CONTENT_VALADDTHIS_YES</option>
+			<option value="0">PLG_CONTENT_VALADDTHIS_NO</option>
+		</field>
+		<field name="ui_use_addressbook" type="radio" default="0" label="PLG_CONTENT_VALADDTHIS_USEBOOK_L" description="PLG_CONTENT_VALADDTHIS_USEBOOK_D">
+			<option value="1">PLG_CONTENT_VALADDTHIS_YES</option>
+			<option value="0">PLG_CONTENT_VALADDTHIS_NO</option>
+		</field>
+		<field name="data_track_linkback" type="radio" default="0" label="PLG_CONTENT_VALADDTHIS_DATATRACK_L" description="PLG_CONTENT_VALADDTHIS_DATATRACK_D">
+			<option value="1">PLG_CONTENT_VALADDTHIS_YES</option>
+			<option value="0">PLG_CONTENT_VALADDTHIS_NO</option>
+		</field>
+		<field name="data_use_flash" type="radio" default="1" label="PLG_CONTENT_VALADDTHIS_USEFLASH_L" description="PLG_CONTENT_VALADDTHIS_USEFLASH_D">
+			<option value="1">PLG_CONTENT_VALADDTHIS_YES</option>
+			<option value="0">PLG_CONTENT_VALADDTHIS_NO</option>
+		</field>
+		<field name="data_use_cookies" type="radio" default="1" label="PLG_CONTENT_VALADDTHIS_USECOOKIES_L" description="PLG_CONTENT_VALADDTHIS_USECOOKIES_D">
+			<option value="1">PLG_CONTENT_VALADDTHIS_YES</option>
+			<option value="0">PLG_CONTENT_VALADDTHIS_NO</option>
+		</field>
+		<field name="ui_use_embeddable_services_beta" type="radio" default="0" label="PLG_CONTENT_VALADDTHIS_USE_EMBED_L" description="PLG_CONTENT_VALADDTHIS_USE_EMBED_D">
+			<option value="1">PLG_CONTENT_VALADDTHIS_YES</option>
+			<option value="0">PLG_CONTENT_VALADDTHIS_NO</option>
+		</field>
+		<field name="data_ga_tracker" type="radio" default="0" label="PLG_CONTENT_VALADDTHIS_USE_GATRACK_L" description="PLG_CONTENT_VALADDTHIS_USE_GATRACK_D">
+			<option value="1">PLG_CONTENT_VALADDTHIS_YES</option>
+			<option value="0">PLG_CONTENT_VALADDTHIS_NO</option>
+		</field>
+		<field name="ga_tracker_object" type="text" default="" label="PLG_CONTENT_VALADDTHIS_GATRACK_L" description="PLG_CONTENT_VALADDTHIS_GATRACK_D" />
+		<field type="spacer" name="spacer2" hr="true" />
+		<field name="ui_header_color" type="text" default="" label="PLG_CONTENT_VALADDTHIS_ADDTHIS_HEADERCOLOR_L" description="PLG_CONTENT_VALADDTHIS_ADDTHIS_HEADERCOLOR_D" />
+		<field name="ui_header_background" type="text" default="" label="PLG_CONTENT_VALADDTHIS_ADDTHIS_HEADERBACKG_L" description="PLG_CONTENT_VALADDTHIS_ADDTHIS_HEADERBACKG_D" />
+		<field name="ui_cobrand" type="text" default="" label="PLG_CONTENT_VALADDTHIS_ADDTHIS_BRAND_L" description="PLG_CONTENT_VALADDTHIS_ADDTHIS_BRAND_D" size="50" />
+		<field name="ui_offset_top" type="text" default="" label="PLG_CONTENT_VALADDTHIS_OFFSET_TOP_L" description="PLG_CONTENT_VALADDTHIS_OFFSET_TOP_D" />
+		<field name="ui_offset_left" type="text" default="" label="PLG_CONTENT_VALADDTHIS_OFFSET_LEFT_L" description="PLG_CONTENT_VALADDTHIS_OFFSET_LEFT_D" />
+		<field name="ui_hover_direction" type="radio" default="0" label="PLG_CONTENT_VALADDTHIS_HOVERDIR_L" description="PLG_CONTENT_VALADDTHIS_HOVERDIR_D">
+			<option value="0">PLG_CONTENT_VALADDTHIS_DIR1</option>
+			<option value="1">PLG_CONTENT_VALADDTHIS_DIR2</option>
+			<option value="-1">PLG_CONTENT_VALADDTHIS_DIR3</option>
+		</field>
+		<field name="ui_delay" type="text" default="" label="PLG_CONTENT_VALADDTHIS_HOVER_DELAY_L" description="PLG_CONTENT_VALADDTHIS_HOVER_DELAY_D" />
+
+		<!-- language parameters -->
+		<field type="spacer" name="spacer3" label="PLG_CONTENT_VALADDTHIS_HEADER_LANGUAGE" />
+		<field name="ui_language" type="text" default="" label="PLG_CONTENT_VALADDTHIS_UILANG_L" description="PLG_CONTENT_VALADDTHIS_UILANG_D" />
+		<field name="text_share_caption" type="text" default="" label="PLG_CONTENT_VALADDTHIS_TEXTSHARE_L" description="PLG_CONTENT_VALADDTHIS_TEXTSHARE_D" size="50" />
+		<field name="text_email_caption" type="text" default="" label="PLG_CONTENT_VALADDTHIS_TEXTEMCAPT_L" description="PLG_CONTENT_VALADDTHIS_TEXTEMCAPT_D" size="50" />
+		<field name="text_email" type="text" default="" label="PLG_CONTENT_VALADDTHIS_EMAIL_L" description="PLG_CONTENT_VALADDTHIS_EMAIL_D" size="50" />
+		<field name="text_favorites" type="text" default="" label="PLG_CONTENT_VALADDTHIS_FAVORITES_L" description="PLG_CONTENT_VALADDTHIS_FAVORITES_D" size="50" />
+		<field name="text_more" type="text" default="" label="PLG_CONTENT_VALADDTHIS_MORE_L" description="PLG_CONTENT_VALADDTHIS_MORE_D" size="50" />
+
+		<!-- button parameters -->
+		<field type="spacer" name="spacer4" label="PLG_CONTENT_VALADDTHIS_HEADER_BUTTON" />
+		<field name="button_type" type="radio" default="0" label="PLG_CONTENT_VALADDTHIS_BUTTON_TYPE_L" description="PLG_CONTENT_VALADDTHIS_BUTTON_TYPE_D">
+			<option value="0">PLG_CONTENT_VALADDTHIS_BUTTON_TYPE1</option>
+			<option value="1">PLG_CONTENT_VALADDTHIS_BUTTON_TYPE2</option>
+			<option value="2">PLG_CONTENT_VALADDTHIS_BUTTON_TYPE3</option>
+		</field>
+		<field name="ui_click" type="list" default="0" label="PLG_CONTENT_VALADDTHIS_CLICK_L" description="PLG_CONTENT_VALADDTHIS_CLICK_D">
+			<option value="1">PLG_CONTENT_VALADDTHIS_M_CLICK</option>
+			<option value="0">PLG_CONTENT_VALADDTHIS_M_OVER</option>
+		</field>
+		<field name="custom_choice" type="list" default="0" label="PLG_CONTENT_VALADDTHIS_CUSTOM_CHOICE_L" description="PLG_CONTENT_VALADDTHIS_CUSTOM_CHOICE_D">
+			<option value="0">PLG_CONTENT_VALADDTHIS_CUSTOM_OPTION1</option>
+			<option value="1">PLG_CONTENT_VALADDTHIS_CUSTOM_OPTION2</option>
+			<option value="2">PLG_CONTENT_VALADDTHIS_CUSTOM_OPTION3</option>
+			<option value="3">PLG_CONTENT_VALADDTHIS_CUSTOM_OPTION4</option>
+		</field>
+		<field name="addthis_button" type="radio" default="0" label="PLG_CONTENT_VALADDTHIS_ADDTHIS_BUTTON_L" description="PLG_CONTENT_VALADDTHIS_ADDTHIS_BUTTON_D">
+			<option value="0"><![CDATA[ <img src="../plugins/content/valaddthis/valaddthis/images/addthis-long.gif"><br  />]]></option>
+			<option value="1"><![CDATA[ <img src="../plugins/content/valaddthis/valaddthis/images/addthis-short.gif"><br />]]></option>
+			<option value="2"><![CDATA[ <img src="../plugins/content/valaddthis/valaddthis/images/bm-long.gif"><br />]]></option>
+			<option value="3"><![CDATA[ <img src="../plugins/content/valaddthis/valaddthis/images/bm-short.gif"><br />]]></option>
+			<option value="4"><![CDATA[ <img src="../plugins/content/valaddthis/valaddthis/images/share-long.gif"><br />]]></option>
+			<option value="5"><![CDATA[ <img src="../plugins/content/valaddthis/valaddthis/images/share-short.gif"><br />]]></option>
+			<option value="6"><![CDATA[ <img src="../plugins/content/valaddthis/valaddthis/images/plus-small.gif"><br />]]></option>
+			<option value="7"><![CDATA[ <img style="vertical-align:middle; margin-bottom:3px;" src="../plugins/content/valaddthis/valaddthis/images/rss-feed-big.gif"><br />]]></option>
+			<option value="8"><![CDATA[ <img src="../plugins/content/valaddthis/valaddthis/images/rss-feed-long.gif"><br />]]></option>
+			<option value="9"><![CDATA[ <img src="../plugins/content/valaddthis/valaddthis/images/rss-feed-short.gif"><br />]]></option>
+			<option value="10"><![CDATA[ <img style="vertical-align:middle; margin-bottom:3px;" src="../plugins/content/valaddthis/valaddthis/images/subscribe-big.gif"><br />]]></option>
+			<option value="11"><![CDATA[ <img src="../plugins/content/valaddthis/valaddthis/images/subscribe-long.gif"><br />]]></option>
+			<option value="12"><![CDATA[ <img src="../plugins/content/valaddthis/valaddthis/images/subscribe-short.gif"><br />]]></option>
+			<option value="13"><![CDATA[ <img src="../plugins/content/valaddthis/valaddthis/images/email-short.gif"><br />]]></option>
+			<option value="14"><![CDATA[ <img style="vertical-align:middle; margin-bottom:3px;" src="../plugins/content/valaddthis/valaddthis/images/share-counter.gif"><br />]]></option>
+		</field>
+		<field name="custom_button" type="text" default="" label="PLG_CONTENT_VALADDTHIS_CUSTOM_BUTTON_L" description="PLG_CONTENT_VALADDTHIS_CUSTOM_BUTTON_D" size="50" />
+		<field name="custom_text" type="text" default="" label="PLG_CONTENT_VALADDTHIS_CUSTOM_TEXT_L" description="PLG_CONTENT_VALADDTHIS_CUSTOM_TEXT_D" size="50" />
+		<field name="text_style" type="text" default="" label="PLG_CONTENT_VALADDTHIS_TEXT_STYLE_L" description="PLG_CONTENT_VALADDTHIS_TEXT_STYLE_D" size="50" />
+		<field name="alt_text" type="text" default="" label="PLG_CONTENT_VALADDTHIS_ALT_TEXT_L" description="PLG_CONTENT_VALADDTHIS_ALT_TEXT_D" size="50" />
+		<field name="rssfeed_url" type="text" default="" label="PLG_CONTENT_VALADDTHIS_FEED_URL_L" description="PLG_CONTENT_VALADDTHIS_FEED_URL_D" size="50" />
+
+		<!-- toolbox parameters -->
+		<field type="spacer" name="spacer5" label="PLG_CONTENT_VALADDTHIS_HEADER_TOOLBOX" />
+		<field name="quick_toolbox" type="radio" default="0" label="PLG_CONTENT_VALADDTHIS_QUICKTOOLBOX_L" description="PLG_CONTENT_VALADDTHIS_QUICKTOOLBOX_D">
+			<option value="0">PLG_CONTENT_VALADDTHIS_OPTION_QUICK</option>
+			<option value="1"><![CDATA[ <img src="../plugins/content/valaddthis/valaddthis/images/quick1.gif"><br />]]></option>
+			<option value="2"><![CDATA[ <img src="../plugins/content/valaddthis/valaddthis/images/quick2.gif"><br />]]></option>
+			<option value="3"><![CDATA[ <img src="../plugins/content/valaddthis/valaddthis/images/quick3.gif"><br />]]></option>
+			<option value="4"><![CDATA[ <img src="../plugins/content/valaddthis/valaddthis/images/quick4.gif"><br />]]></option>
+			<option value="5"><![CDATA[ <img src="../plugins/content/valaddthis/valaddthis/images/quick5.gif"><br />]]></option>
+			<option value="6"><![CDATA[ <img src="../plugins/content/valaddthis/valaddthis/images/quick6.gif"><br />]]></option>
+			<option value="7"><![CDATA[ <img src="../plugins/content/valaddthis/valaddthis/images/quick7.gif"><br />]]></option>
+			<option value="8"><![CDATA[ <img src="../plugins/content/valaddthis/valaddthis/images/quick8.gif"><br />]]></option>
+			<option value="9"><![CDATA[ <img src="../plugins/content/valaddthis/valaddthis/images/quick9.gif"><br />]]></option>
+			<option value="10"><![CDATA[ <img src="../plugins/content/valaddthis/valaddthis/images/quick10.gif"><br />]]></option>
+			<option value="11"><![CDATA[ <img src="../plugins/content/valaddthis/valaddthis/images/quick11.gif"><br />]]></option>
+			<option value="12"><![CDATA[ <img style="vertical-align:middle; margin-bottom:3px;" src="../plugins/content/valaddthis/valaddthis/images/quick12.gif"><br />]]></option>
+		</field>
+		<field name="toolbox_services" type="text" default="" label="PLG_CONTENT_VALADDTHIS_TOOLSERV_L" description="PLG_CONTENT_VALADDTHIS_TOOLSERV_D" size="50" />
+		<field name="use_text_flag" type="radio" default="0" label="PLG_CONTENT_VALADDTHIS_USETEXT_L" description="PLG_CONTENT_VALADDTHIS_USETEXT_D">
+			<option value="1">PLG_CONTENT_VALADDTHIS_YES</option>
+			<option value="0">PLG_CONTENT_VALADDTHIS_NO</option>
+		</field>
+		<field name="use_nofollow" type="radio" default="0" label="PLG_CONTENT_VALADDTHIS_NOFOLLOW_L" description="PLG_CONTENT_VALADDTHIS_NOFOLLOW_D">
+			<option value="1">PLG_CONTENT_VALADDTHIS_YES</option>
+			<option value="0">PLG_CONTENT_VALADDTHIS_NO</option>
+		</field>
+		<field name="toolbox_style" type="list" default="default" label="PLG_CONTENT_VALADDTHIS_TOOLBOX_STYLE_L" description="PLG_CONTENT_VALADDTHIS_TOOLBOX_STYLE_D">
+			<option value="default">PLG_CONTENT_VALADDTHIS_STYLE_OPTION1</option>
+			<option value="default32">PLG_CONTENT_VALADDTHIS_STYLE_OPTION7</option>
+			<option value="vertical">PLG_CONTENT_VALADDTHIS_STYLE_OPTION2</option>
+			<option value="vertical32">PLG_CONTENT_VALADDTHIS_STYLE_OPTION8</option>
+			<option value="cssHorizontal">PLG_CONTENT_VALADDTHIS_STYLE_OPTION3</option>
+			<option value="cssVertical1">PLG_CONTENT_VALADDTHIS_STYLE_OPTION4</option>
+			<option value="cssVertical2">PLG_CONTENT_VALADDTHIS_STYLE_OPTION5</option>
+			<option value="cssUser">PLG_CONTENT_VALADDTHIS_STYLE_OPTION6</option>
+		</field>
+		<field name="toolbox_width" type="text" default="" label="PLG_CONTENT_VALADDTHIS_TOOLBOX_WIDTH_L" description="PLG_CONTENT_VALADDTHIS_TOOLBOX_WIDTH_D" />
+		<field name="toolbox_sharetext" type="text" default="" label="PLG_CONTENT_VALADDTHIS_TOOLBOX_SHARE_L" description="PLG_CONTENT_VALADDTHIS_TOOLBOX_SHARE_D" size="50" />
+		<field name="toolbox_shareurl" type="text" default="" label="PLG_CONTENT_VALADDTHIS_TOOLBOX_SHAREURL_L" description="PLG_CONTENT_VALADDTHIS_TOOLBOX_SHAREURL_D" size="50" />
+		<field name="tooltip_text" type="text" default="" label="PLG_CONTENT_VALADDTHIS_TOOLTIP_L" description="PLG_CONTENT_VALADDTHIS_TOOLTIP_D" size="50" />
+		<field name="use_more_flag" type="radio" default="0" label="PLG_CONTENT_VALADDTHIS_USEMORE_L" description="PLG_CONTENT_VALADDTHIS_USEMORE_D">
+			<option value="1">PLG_CONTENT_VALADDTHIS_YES</option>
+			<option value="0">PLG_CONTENT_VALADDTHIS_NO</option>
+		</field>
+		<field name="toolbox_more" type="text" default="" label="PLG_CONTENT_VALADDTHIS_TOOLBOX_MORE_L" description="PLG_CONTENT_VALADDTHIS_TOOLBOX_MORE_D" size="50" />
+		<field name="toolbox_separator" type="text" default="" label="PLG_CONTENT_VALADDTHIS_TOOLBOX_SEPARATOR_L" description="PLG_CONTENT_VALADDTHIS_TOOLBOX_SEPARATOR_D" />
+	</fieldset>
+	</fields>
+	</config>
+
+</install>

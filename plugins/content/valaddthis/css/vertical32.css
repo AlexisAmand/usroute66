@@ -1,0 +1,73 @@
+/* 32px Toolbox simple vertical layout */
+.addthis_toolbox iframe {
+	border:none;
+	overflow:hidden;
+	width:63px;
+	height:24px;
+	display:block;
+	margin-bottom:6px;
+}
+.addthis_toolbox .FBlike {
+	width:90px;
+	margin-bottom:2px !important;
+}
+.addthis_toolbox .FBrec {
+	width:130px;
+	margin-bottom:2px !important;
+}
+.addthis_toolbox .FBlikeB {
+	width:90px;
+	height:62px;
+	margin-bottom:6px !important;
+}
+.addthis_toolbox .FBrecB {
+	width:100px;
+	height:62px;
+	margin-bottom:6px !important;
+}
+iframe.twitter-share-button {
+	padding:0;
+	margin-bottom:6px !important;
+}
+.addthis_toolbox .tweetmeme_vert {
+	float:left !important;
+	margin-right:6px !important;
+	height:68px !important;
+}
+.tweetmeme_vert iframe {
+	height:64px !important;
+}
+.addthis_toolbox .google-buzz-button {
+	display:block !important;
+	margin-bottom:6px !important;
+}
+.addthis_toolbox .IN-widget {
+	margin-bottom:6px !important;
+}
+.addthis_counter.addthis_bubble_style {
+	margin-left:0 !important;
+}
+.addthis_toolbox .addthis_tweet {
+	float:left !important;
+}
+.addthis_toolbox .db-compact, .addthis_toolbox .db-medium {
+	margin-bottom:6px !important;
+	display:block !important;
+}
+.addthis_toolbox .plusone {
+	margin-bottom:6px !important;
+}
+.addthis_toolbox .addthis_counter {
+	margin-bottom:6px !important;
+}
+.addthis_toolbox .stumbleuponH {
+	margin-bottom:6px !important;
+	height:20px !important;
+}
+.addthis_toolbox .stumbleuponV {
+	height:66px !important;
+}
+.addthis_toolbox a.at300b {
+	display:block !important;
+	margin-bottom:4px !important;
+}

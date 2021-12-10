@@ -1,0 +1,46 @@
+/* The following styles are copied from the module's CSS file horizontal.css */
+/* You may change them as you wish */
+
+/* User-Defined Toolbox layout */
+.addthis_toolbox .addUser {
+	padding: 5px 0 0 6px;
+	border: 3px solid #eee;
+}
+.addthis_toolbox .addUser div {
+	float: left;
+	margin-bottom: 9px;
+	margin-top: 1px;
+	width: auto;
+}
+.addthis_toolbox .addUser a {
+	border: 2px solid #fff;
+	padding: 2px 2px 4px 16px;
+	position: relative;
+	text-decoration: none;
+}
+.addthis_toolbox .addUser a:hover {
+	border: 2px solid #105CB6;
+	background: #B4D3F8;
+	color: #105CB6;
+	text-decoration: none;
+}
+.addthis_toolbox .addUser span {
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	top: 2px;
+	left: 1px;
+}
+.addthis_toolbox iframe {
+	float:left;
+	border:none;
+	overflow:hidden;
+	width:63px;
+	height:21px;
+	padding:2px 4px 0px 4px;
+}
+.clearAddthis {
+	float: none !important;
+	clear: both !important;
+	margin: 0 !important;
+}

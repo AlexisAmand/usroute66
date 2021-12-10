@@ -1,0 +1,49 @@
+<?php 
+// Fichier exemple pour l'intégration d'iGalerie à un site,
+// qu'il faudra renommer en 'index.php'.
+// La ligne suivante correspond à l'inclusion du fichier 'index.php'
+// d'iGalerie, renommé ici en 'index.inc'.
+header('Content-Type: text/html; charset=ISO-8859-15');
+require_once(dirname(__FILE__) . '/index.inc');
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+
+<head>
+
+<title><?php $tpl->getInfo('title'); ?></title>
+
+<style type="text/css">
+body {
+	text-align: center;
+	background: #EFEFEF;
+	font-size: .8em;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+#ma_galerie {
+	text-align: left;
+	width: 750px;
+	margin: 10px auto;
+	border: 4px silver double;
+	background: white;
+}
+#ma_galerie #membres {
+	padding: 5px;
+}
+</style>
+<?php require_once(dirname(__FILE__) . '/entete.php'); ?>
+
+</head>
+
+<body>
+
+<div id="ma_galerie">
+	<?php require_once(dirname(__FILE__) . '/' . IGAL_TEMPLATE); ?>
+
+</div>
+
+</body>
+
+</html>

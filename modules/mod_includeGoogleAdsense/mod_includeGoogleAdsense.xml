@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.1">
+	<name>Liens commerciaux</name>
+	<author>xorg133</author>
+	<creationDate>March, 2010</creationDate>
+	<copyright>xorg133</copyright>
+	<license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>include-google-adsense@servicesgratis.net</authorEmail>
+	<authorUrl>http://googleadsense.sourceforge.net/</authorUrl>
+	<version>1</version>
+	<description><![CDATA[ Ce module vous permettra d'ajouter facilement des annonces Google Adsense dans Joomla. Les annonces sont entièrement paramétrable en couleur, taille, type... (comme dans Google Adsense). Si vous utilisez ce module merci de voter pour celui-ci ! Cela m'encouragera à le maintenir à jour et à l'améliorer ;)
+	]]></description>
+	<files>
+		<filename module="mod_includeGoogleAdsense">includeGoogleAdsense.php</filename>
+	</files>
+	<params>
+		<param name="@spacer" type="spacer" default="Les paramètres ci-dessous vous permettrons de personnaliser votre bloc d'annonce" label=" " description=" " />
+
+		<param name="includeGoogleAdsense_pub_type" type="list" default="text_image" label="Type d'annonce" description="Vous pouvez choisir ici le type de contenu qui sera affiché dans vos annonces. Attention, si vous choisissez 'Seulement des images' il faudra que vous choisissiez une des tailles suivantes : 728x90, 468x60, 300x250, 160x600 ou 120x600 !">
+				<option value="text_image">Annonces textuelles et illustrées (option par défaut)</option>
+				<option value="text">Annonces textuelles uniquement du texte</option>
+			  	<option value="image">Annonces illustrées uniquement</option>
+		</param>
+		<param name="includeGoogleAdsense_pub_angles" type="list" default="6" label="Styles d'angles" description="Vous pouvez choisir un style pour les angles de l'annonce.">
+				<option value=""> Selectionnez un style d'angle </option> 
+				<option value="0"> Angles droits </option> 
+				<option value="6"> Angles légèrement arrondis </option> 
+				<option value="10"> Angles très arrondis</option>
+		</param>
+
+		<param name="includeGoogleAdsense_pub_format" type="list" default="728x90_as" label="Format d'annonce" description="Choisissez le format pour votre annonce. Pour voir un aperçu des formats disponible rendez vous sur https://www.google.com/adsense/adformats ! ">
+			<option value=""> ------ Recommandée ---- </option>
+				<option value="300x250_as">Rectangle moyen 300 x 250</option>
+				<option value="336x280_as">Grand rectangle 336 x 280</option>
+				<option value="728x90_as">Leaderboard 728 x 90</option>
+				<option value="160x600_as">Skycraper large 160 x 600</option>
+			<option value=""> ------ Autre : horizontal ---- </option>
+				<option value="468x60_as">Bannière 468 x 60</option>
+				<option value="234x60_as">Demi-bannière de 234 X 60</option>
+			<option value=""> ------ Autre : vertical ---- </option>
+				<option value="120x600_as">Skyscraper 120 x 600</option>
+				<option value="120x240_as">Bannière verticale 120 x 240</option>
+			<option value=""> ------ Autre : carré ---- </option>
+				<option value="250x250_as">Carré 250 x 250</option>
+				<option value="200x200_as">Petit carré 200 x 200</option>
+				<option value="180x150_as">Petit rectangle 180 x 150</option>
+				<option value="125x125_as">Bouton 125 x 125</option>
+			<option value=""> ------ Ensemble de 4 liens : horizontal ---- </option>
+				<option value="728x15_0ads_al">728 x 15</option>
+				<option value="468x15_0ads_al">468 x 15</option>
+			<option value=""> ------ Ensemble de 4 liens : carré ---- </option>
+				<option value="200x90_0ads_al">200 x 90</option>
+				<option value="180x90_0ads_al">180 x 90</option>
+				<option value="160x90_0ads_al">160 x 90</option>
+				<option value="120x90_0ads_al">120 x 90</option>
+			<option value=""> ------ Ensemble de 5 liens : horizontal</option>
+				<option value="728x15_0ads_al_s">728 x 15</option>
+				<option value="468x15_0ads_al_s">468 x 15</option>
+			<option value=""> ------ Ensemble de 5 liens : carré</option>
+				<option value="200x90_0ads_al_s">200 x 90</option>
+				<option value="180x90_0ads_al_s">180 x 90</option>
+				<option value="160x90_0ads_al_s">160 x 90</option>
+				<option value="120x90_0ads_al_s">120 x 90</option>
+		</param>
+		
+		<param name="@spacer" type="spacer" default="Paramètre des couleurs :" label=" " description=" " />
+		<param name="includeGoogleAdsense_color_border" type="text" default="D5D5D5" label="Bordure" description="Couleur de la bordure sans le #" />
+		<param name="includeGoogleAdsense_color_bg" type="text" default="FFFFFF" label="Arrière-plan" description="Couleur d'arrière plan sans le #" />
+		<param name="includeGoogleAdsense_color_title" type="text" default="0033FF" label="Titre" description="Couleur du titre des annonces sans le #" />
+		<param name="includeGoogleAdsense_color_text" type="text" default="333333" label="Texte" description="Couleur du texte sans le #" />
+		<param name="includeGoogleAdsense_color_url" type="text" default="008000" label="URL" description="Couleur des URL sans le #" />
+		<param name="@spacer" type="spacer" default="Paramètre de votre compte Google Adsense :" label=" " description=" " />
+		<param name="includeGoogleAdsense_pub_client" type="text" default="" label="Référence éditeur" description="Vous pouvez trouver ce numéro au-dessus à droite de votre espace de gestion Google Adsense. C'est une chaine de caractère du type pub-1706118755302657." />
+
+</params>
+<params group="advanced">
+
+		<param name="includeGoogleAdsense_pub_critere" type="text" default="" label="N° du critère" description="Si vous le désirez, vous pouvez entrer un numéro de critère ici ce qui vous permettra un meilleur suivit de vos annonces. Ce numéro est généré dans Google Adsense lorsque vous créez un critère." />
+		<param name="includeGoogleAdsense_alternate_url" type="text" default="" label="Url annonce de substitution" description="Indiquez l'url à afficher lorsqu'aucune annonce pertinente n'est disponible." />
+		<param name="includeGoogleAdsense_alternate_color" type="text" default="" label="Couleur de substitution" description="Indiquez une couleur de substitution lorsqu'aucune annonce pertinente n'est disponible." />
+		<param name="@spacer" type="spacer" default="Vous pouvez soutenir ce module en affichant de temps en temps une annonce pour son auteur." label=" " description=" " />
+		<param name="includeGoogleAdsense_soutien" type="list" label="Niveau de soutien :" description="Le niveau de soutien correspond au pourcentage de pub que vous êtes prêt à afficher pour soutenir l'auteur. Par exemple si vous définissez 25%, 1 pub sur 4 sera affiché avec le code éditeur de l'auteur de ce module. Merci à ceux qui soutiendront le développement de ce module !" default="10">
+			<option value="1">1%</option>
+			<option value="2">2%</option>
+			<option value="5">5%</option>
+			<option value="10">10%</option>
+			<option value="25">25%</option>
+			<option value="50">50%</option>
+			<option value="75">75%</option>
+			<option value="100">100%</option>
+		</param>
+</params>		
+</install>

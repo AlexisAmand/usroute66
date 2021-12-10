@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content">
+	<name>Content - Bookmarks sociaux FR</name>
+	<version>2.0</version>
+	<creationDate>Juillet 2009</creationDate>
+	<author>Updated by Gael Dudieu - Original script by Francisa Mankrah and Aleksandar Bogdanovic</author>
+	<authorEmail>contact@atypicom.fr</authorEmail>
+	<authorUrl>http://www.labo.atypicom.fr</authorUrl>
+	<copyright>Copyright</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>"Bookmarks Sociaux FR Manager" est un outil permettant de gerer les principaux bookmarks sociaux FR dans votre site Joomla. Les IDs des bookmarks sont les suivantes : 1=Wikio; 2=Scoopeo; 3=Jamespot; 4=TapeMoi; 5=Fuzz; 6=MisterWong; 7=Facebook; 8=Google; 9=Technorati; 10=Blogmemes; 11=Pioche; 12=Gmiix; 13=Bluegger; 14=Digg-France; 15=Yoolink; 16=VisitezMonSite; 17=Twinik; 19=Twitter</description>
+	<files>
+		<filename plugin="bmsmanager">bmsmanager.php</filename>
+		<filename plugin="bmsmanager">bmsmanager/classic.css</filename>
+	</files>
+	<params>
+		<param name="bms_css" type="text" default="classic" label="PARAM_BMS_CSS_L" description="PARAM_BMS_CSS_D" />
+
+		<param name="auto_manual" type="list" default="1" label="PARAM_AUTO_TITLE_TEXT_L" description="PARAM_AUTO_TITLE_TEXT_D">
+			<option value="1">PARAM_AUTO_TITLE_TEXT_V0D</option>
+			<option value="0">PARAM_AUTO_TITLE_TEXT_V1D</option>
+		</param>
+		<param name="bmsm_popular" type="hidden" default="1"  label="PARAM_POPULAR_L" description="PARAM_POPULAR_D">
+				<option value="1">PARAM_YES_V</option>
+			    <option value="0">PARAM_NO_V</option>
+		</param>
+		<param name="bmsm_list" type="textarea" cols="45" default="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19" label="PARAM_BMSM_LIST_L" description="PARAM_BMSM_LIST_D"/>
+		
+		<param name="newpopparent" type="list" default="1" label="PARAM_DDRFS_NEWPOPPARENT_L" description="PARAM_DDRFS_NEWPOPPARENT_D">
+			<option value="1">PARAM_DDRFS_NEW_V0D</option>
+			<option value="3">PARAM_DDRFS_PARENT_V2D</option>
+		</param>
+
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+				
+		<param name="bmsm_after_before" type="list" default="1" label="PARAM_BMSM_A_OR_B_L" description="PARAM_BMSM_A_OR_B_D">
+			<option value="0">PARAM_BMSM_A_OR_B_V0D</option>
+			<option value="1">PARAM_BMSM_A_OR_B_V1D</option>
+			<option value="2">PARAM_BMSM_A_OR_B_V2D</option>
+		</param>
+		<param name="bmsm_header" type="textarea" cols="35" default="" label="PARAM_BMSM_HEADER_L" description="PARAM_BMSM_HEADER_D"/>
+		
+		<param name="leftright" type="list" default="right" label="PARAM_BMSM_ALING_L" description="PARAM_BMSM_ALING_D">
+			<option value="left">PARAM_LEFT_V</option>
+			<option value="right">PARAM_RIGHT_V</option>
+		</param>
+
+		<param name="bm_size" type="list" default="small" label="BM_SIZE" description="BM_SIZE_DESC">
+			<option value="text">SIZE_TEXT</option>
+			<option value="small">SIZE_SMALL</option>
+		</param>
+			
+		<param name="bm_sep" type="text" default=" " label="BM_SEP" description="BM_SEP_DESC"/>
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<param name="bmsm_show_frontpage" type="list" default="0" label="PARAM_BMSM_FRONT_TEXT_L" description="PARAM_BMSM_FRONT_TEXT_D">
+			<option value="1">PARAM_YES_V</option>
+			<option value="0">PARAM_NO_V</option>
+		</param>
+		<param name="bmsm_show_section" type="list" default="0" label="PARAM_BMSM_SEC_TEXT_L" description="PARAM_BMSM_SEC_TEXT_D">
+			<option value="1">PARAM_YES_V</option>
+			<option value="0">PARAM_NO_V</option>
+		</param>
+		<param name="bmsm_show_cate" type="list" default="0" label="PARAM_BMSM_CATE_TEXT_L" description="PARAM_BMSM_CATE_TEXT_D">
+			<option value="1">PARAM_YES_V</option>
+			<option value="0">PARAM_NO_V</option>
+		</param>
+		<param name="bmsm_show_in_intro_text" type="list" default="0" label="PARAM_BMSM_INTRO_TEXT_L" description="PARAM_BMSM_INTRO_TEXT_D">
+			<option value="1">PARAM_YES_V</option>
+			<option value="0">PARAM_NO_V</option>
+		</param>
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<param name="sectionid" type="text" default='' label="PARAM_SECTIONS_L" description="PARAM_SECTIONS_D">
+		</param>
+		<param name="catid" type="text" default='' label="PARAM_CATEGORY_L" description="PARAM_CATEGORY_D">
+		</param>
+    		<param name="articleid" type="text" default='' label="PARAM_ARTICLES_L" description="PARAM_ARTICLES_D">
+		</param>
+		
+	</params>
+	<languages folder="loc">
+		<language tag="en-GB">en-GB.plg_content_bmsmanager.ini</language>
+		<language tag="es-ES">es-ES.plg_content_bmsmanager.ini</language>
+		<language tag="fr-FR">fr-FR.plg_content_bmsmanager.ini</language>
+	</languages>
+</install>

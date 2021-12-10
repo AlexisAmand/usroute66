@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params addpath="/administrator/components/com_easybookreloaded/element">
+		<param name="default_published" type="radio" default="1" label="Publish new Entries" description="Publish new entries Desc">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="send_mail" type="radio" default="1" label="Send Notification E-Mail" description="Send Notification E-Mail Desc">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="emailfornotification" type="easytext" size="30" default="" label="E-Mail For Notification" description="E-Mail For Notification Desc" />
+		<param name="secret_word" type="easytext" size="20" default="" label="Secret word" description="Secret word Desc" />		
+		<param name="valid_time_emailnot" type="easytext" size="5" default="1" label="Valid Time For Notification" description="Valid Time For Notification Desc" />
+		<param name="badwordfilter" type="radio" default="1" label="Badwordfilter" description="Badwordfilter Desc">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="entries_perpage" type="easytext" size="3" default="10" label="Entries per Page" description="Entries per Page DESC" />
+		<param name="entries_order" type="radio" default="DESC" label="Entries Order" description="Entries Order DESC">
+			<option value="DESC">New entries first</option>
+			<option value="ASC">New entries last</option>
+		</param>
+		<param name="show_introtext" type="radio" default="0" label="Show Introtext" description="Show Introtext Desc">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="introtext" type="textarea" value="" rows="4" cols="30" label="Introtext" description="Introtext Desc" />
+		<param name="support_bbcode" type="radio" default="1" label="Allow BBCode" description="Allow BBCode Desc">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="support_smilie" type="radio" default="1" label="Allow Smilies" description="Allow Smilies Desc">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="smilie_set" type="radio" default="0" label="Smilies Set" description="Smilies Set Desc">
+			<option value="0">Set 1</option>
+			<option value="1">Set 2</option>
+		</param>
+		<param name="support_link" type="radio" default="1" label="Allow Links" description="Allow Links Desc">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="support_mail" type="radio" default="1" label="Allow email addresses" description="Allow email addresses Desc">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="support_pic" type="radio" default="1" label="Allow Pictures" description="Allow Pictures Desc">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="support_code" type="radio" default="1" label="Allow Code" description="Allow Code Desc">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="geshi_lines" type="radio" default="1" label="GeSHi Lines" description="GeSHi Lines Desc">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="wordwrap" type="radio" default="1" label="Automatic word wrap" description="Automatic word wrap Desc">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="maxlength" type="easytext" size="4" default="75" label="Automatic word wrap after" description="Automatic word wrap after Desc" />
+		<param name="template_dark" type="radio" default="0" label="Dark Template" description="Dark Template Desc">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="date_format" type="radio" default="0" label="Date Format" description="Date Format Desc">
+			<option value="0">Date Time</option>
+			<option value="1">Date</option>
+		</param>
+		<param name="@spaceer" type="spacer" default="" label="" description="" />
+		<param name="show_rating" type="radio" default="1" label="Show Rating" description="Show Rating Desc">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="rating_max"  type="easytext" size="3" default="5" label="Maximum Rating" description="Maximum Rating Desc" />		
+		<param name="show_rating_hint" type="radio" default="1" label="Show Rating Hint" description="Show Rating Hint Desc">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_rating_type" type="radio" default="0" label="Show Rating Type" description="Show Rating Type Desc">
+			<option value="0">List</option>
+			<option value="1">Radio Buttons</option>
+		</param>
+		<param name="enable_log" type="radio" default="1" label="IP Logging" description="IP Logging Desc">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="show_mail" type="radio" default="1" label="Show Mail" description="Show Mail Desc">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="require_mail" type="radio" default="1" label="Require Mail" description="Require Mail Desc">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="show_loca" type="radio" default="1" label="Show Location" description="Show Location Desc">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_home" type="radio" default="1" label="Show Home" description="Show Home Desc">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="nofollow_home" type="radio" default="1" label="Nofollow Home" description="Nofollow Home Desc">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="show_icq" type="radio" default="1" label="Show ICQ" description="Show ICQ Desc">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_aim" type="radio" default="1" label="Show AIM" description="Show AIM Desc">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_msn" type="radio" default="1" label="Show MSN" description="Show MSN Desc">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_yah" type="radio" default="1" label="Show YAH" description="Show YAH Desc">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_skype" type="radio" default="1" label="Show Skype" description="Show Skype Desc">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="@spaceer" type="spacer" default="" label="" description="" />
+		<param name="enable_spam" type="radio" default="1" label="Enable EasyCalcCheck Plus" description="Enable EasyCalcCheck Plus Desc">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="max_value" type="easytext" default="20" label="Maximum value for every number" description="Maximum value for every number Desc" />
+		<param name="type_time_sec" type="easytext" default="10" label="Time lock" description="Time lock Desc" />
+		<param name="enable_spam_reg" type="radio" default="1" label="Enable EasyCalcCheck Plus For Reg" description="Enable EasyCalcCheck Plus For Reg Desc">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="@spaceer" type="spacer" default="" label="" description="" />
+		<param name="add_acl" type="acl" default="" label="Add ACL" description="Add ACL Desc" />
+		<param name="admin_acl" type="acl" default="" label="Admin ACL" description="Admin ACL Desc" />
+		<param name="@spaceer" type="spacer" default="" label="" description="" />
+		<param name="show_logo" type="radio" default="1" label="Show Logo" description="Show Logo Desc">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+			<option value="2">Text</option>
+		</param>
+	</params>
+</config>

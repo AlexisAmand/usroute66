@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content">
+	<name>Content - PanelSharing</name>
+	<author>Bilotta Serafino</author>
+	<creationDate>24 May 2010</creationDate>
+	<copyright>GPL</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>serafinobilotta@hotmail.com</authorEmail>
+	<authorUrl>http://www.p2warticles.com</authorUrl>
+	<version>1.2</version>
+    <description>GRAZIE PER AVER INSTALLATO PANELPLUGIN</description>
+	<files>
+		<filename plugin="panelsharing">panelsharing.php</filename>
+	</files>
+	<languages>
+    	<language tag="en-GB">en-GB.plg_content_panelsharing.ini</language>
+		<language tag="it-IT">it-IT.plg_content_panelsharing.ini</language>
+	</languages>
+	<params>		
+		<param name="setjquery" type="list" default='1' label="jQuery" description="SETJQUERY_D">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+                <param name="panelposition" type="list" default='fixed' label="PANELPOSITION_L" description="PANELPOSITION_D">
+			<option value="left">Left</option>
+			<option value="right">Right</option>
+                        <option value="fixed">Fixed</option>
+		</param>
+                <param name="triggertext" type="text" size="15" default="Share" label="TRIGGERTEXT_L" description="TRIGGERTEXT_D" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="showCustomCode" type="radio" default="0" label="SHOWCUSTOM_L" description="SHOWCUSTOM_D">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="customCode" type="textarea" cols="40" rows="5" default="" label="CUSTOMCODE_L" description="CUSTOMCODE_D" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="showDiggButton" type="radio" default='0' label="Digg.com" description="&lt;img src='http://about.digg.com/files/dbmedium.png' /&gt;">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="showRedditButton" type="radio" default='0' label="Reddit" description="&lt;img src='http://img688.imageshack.us/img688/5816/reddit.png' /&gt;">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="showFacebookButton" type="radio" default='1' label="Facebook" description="&lt;img src='http://wiki.developers.facebook.com/images/4/44/Share_boxCount.png' /&gt;">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="showUpnewsButton" type="radio" default='0' label="Upnews.it" description="&lt;img src='http://img121.imageshack.us/img121/4744/upnews.png' /&gt;">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="showTweetmemeButton" type="radio" default='1' label="Tweetmeme" description="&lt;img src='http://tweetmeme.com/images/button.gif' /&gt;">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="tweetmemeUser" type="text" size="15" default="p2warticles" label="Twitter User" description="TWEETMEMEUSER_D" />
+		<param name="tweetmemeUrlShort" type="list" default='No' label="Url Shorteners" description="TWEETMEMEURLSHORT_D">
+			<option value="no">No</option>
+			<option value="bit.ly">bit.ly</option>
+			<option value="cli.gs">cli.gs</option>
+			<option value="is.gd">is.gd</option>
+			<option value="TinyURL.com">TinyURL.com</option>
+			<option value="tr.im">tr.im</option>
+			<option value="ow.ly">ow.ly</option>
+			<option value="twurl.nl">twurl.nl</option>
+		</param>
+		<param name="showTopsyButton" type="radio" default="0" label="Topsy" description="&lt;img src='http://img697.imageshack.us/img697/7044/topsy.png' /&gt;">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="topsyThemes" type="list" default="jade" label="Topsy Themes" description="&lt;img src='http://img197.imageshack.us/img197/1495/topsythemes.jpg' /&gt;">
+			<option value="wisteria">wisteria</option>
+			<option value="brown">brown</option>
+			<option value="monochrome">monochrome</option>
+			<option value="jade">jade</option>
+			<option value="brick-red">brick-red</option>
+			<option value="sea-foam">sea-foam</option>
+			<option value="mustard">mustard</option>
+			<option value="light-blue">light-blue</option>
+			<option value="hot-pink">hot-pink</option>
+			<option value="silver">silver</option>
+			<option value="sand">sand</option>
+			<option value="red">red</option>
+			<option value="blue">blue</option>
+		</param>
+		<param name="showFbshareButton" type="radio" default='0' label="FbShare.me" description="&lt;img src='http://img23.imageshack.us/img23/5729/sharebuttonfbshareme.jpg' /&gt;">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="showStumbleuponButton" type="radio" default='0' label="Stumbleupon" description="&lt;img src='http://cdn.stumble-upon.com/i/badges/badgeRect50x60.gif' /&gt;">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="showSphinnButton" type="radio" default='0' label="Sphinn" description="&lt;img src='http://sphinn.com/images/addSphinn.png' /&gt;">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="showBuzzButton" type="radio" default='1' label="Google Buzz" description="&lt;img src='http://img153.imageshack.us/img153/2825/googlebuzzbutton.png' /&gt;">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="showDiggitaButton" type="radio" default='0' label="Diggita.it" description="&lt;img src='http://img62.imageshack.us/img62/5166/diggita.png' /&gt;">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="showTechnotizieButton" type="radio" default='0' label="Technotizie.it" description="&lt;img src='http://img697.imageshack.us/img697/8148/technotizie.png' /&gt;">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="showEmailButton" type="radio" default='0' label="Email" description="&lt;img src='http://img266.imageshack.us/img266/1729/emaileg.png' /&gt;">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="showYBuzzButton" type="radio" default="0" label="Yahoo Buzz" description="&lt;img src='http://img222.imageshack.us/img222/6858/ybuzz.png' /&gt;">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="showMySpaceButton" type="radio" default='0' label="MySpace" description="&lt;img src='http://developerwiki.myspace.com/uploads/8/85/Diggstyle.png' /&gt;">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="showDesignFloat" type="radio" default='0' label="DesignFloat" description="&lt;img src='http://www.designfloat.com/templates/green/images/tools_float2.gif' /&gt;">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="showDZone" type="radio" default='0' label="DZone" description="&lt;img src='http://img690.imageshack.us/img690/6431/dzone.png' /&gt;">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="showFBLikeButton" type="radio" default='0' label="FACEBOOKLIKEB_L" description="&lt;img src='http://img192.imageshack.us/img192/1636/likebutton.png' /&gt;">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="FBlikePosition" type="radio" default='1' label="FBLIKEPOS_L" description="FBLIKEPOS_D">
+			<option value="0">Left</option>
+			<option value="1">Right</option>
+		</param>
+		<param name="FBlikeTB" type="radio" default="0" label="FBLIKEPOS_L" description="FBLIKEPOS_D">
+			<option value="0">Top</option>
+			<option value="1">Bottom</option>
+		</param>
+		<param name="FBlikeLayoutStyle" type="radio" default='button_count' label="Layout Style" description="determines the size and amount of social context next to the button">
+			<option value="button_count">button_count</option>
+			<option value="standard">standard</option>
+		</param>
+		<param name="FBlikeShowFaces" type="radio" default="true" label="Show Faces" description="Show profile pictures below the button.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="FBlikeWidth" type="text" default='100' size="4" label="FL Width" description="the width of the plugin, in pixels" />
+		<param name="FBlikeVerb" type="radio" default='like' label="Verb To Display" description="The verb to display in the button. Currently only 'like' and 'recommend' are supported.">
+			<option value="like">Like</option>
+			<option value="recommend">Recommend</option>
+		</param>
+		<param name="FBlikeFont" type="list" default='arial' label="Font" description="the font of the plugin">
+			<option value="arial">arial</option>
+			<option value="lucida%2Bgrande">lucida grande</option>
+			<option value="segoe%2Bui">segoe ui</option>
+			<option value="tahoma">tahoma</option>
+			<option value="trebuchet%2Bms">trebuchet ms</option>
+			<option value="verdana">verdana</option>
+		</param>
+		<param name="FBlikeColor" type="radio" default='light' label="Color Scheme" description="The color scheme of the plugin.">
+			<option value="light">Light</option>
+			<option value="dark">Dark</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="showPoweredBy" type="radio" default='1' label="PoweredBy" description="SHOWPOWEREDBY_D">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+                <param name="borderradius" type="text" size="2" default="20" label="BORDERRADIUS_L" description="BORDERRADIUS_D" />
+		<param name="panelstyle" type="textarea" cols="40" rows="25" default="
+                /** Facebook css override **/ .FBConnectButton_Small,.FBConnectButton_RTL_Small{background-position:-5px -232px!important;border-left:1px solid #1a356e;width:50px;margin-left:0px;}.FBConnectButton_Small .FBConnectButton_Text{margin-left:12px!important}.fb_share_count{}
+
+#share_buttons {  float:left;  
+margin:5px;  
+text-align: center;  
+vertical-align:middle; }
+
+.single_button{  margin-top:4px;  
+text-align:center; 
+clear:both}
+
+.topsy_widget_data{margin-left:2px}
+
+#fb_like_button{}
+
+.panel {top: 50px;
+display: none;
+background: #000;
+border:1px solid #111111;
+width: 60px;
+height: auto;
+filter: alpha(opacity=85);
+opacity: .85;
+}
+
+.panel p{
+margin: 0 0 15px 0;
+padding: 0;
+color: #cccccc;
+}
+
+
+a.trigger{
+text-decoration: none;
+top: 80px;
+font-size: 16px;
+letter-spacing:-1px;
+font-family: verdana, helvetica, arial, sans-serif;
+color:#fff;
+font-weight: 700;
+border:1px solid #444444;
+display: block;
+}
+
+a.trigger:hover{
+text-decoration: none;
+top: 80px;
+font-size: 16px;
+letter-spacing:-1px;
+font-family: verdana, helvetica, arial, sans-serif;
+color:#fff;
+font-weight: 700;
+border:1px solid #444444;
+display: block;
+}
+" label="CSS" description="PANELSTYLE_D" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="excludesection" type="text" size="40" default="" label="EXCLUDESECTION_L" description="EXCLUDESECTION_D" />
+		<param name="excludecat" type="text" size="40" default="" label="EXCLUDECAT_L" description="EXCLUDECAT_D" />
+		<param name="excludearticle" type="text" size="40" default="" label="EXCLUDEARTICLE_L" description="EXCLUDEARTICLE_D" />
+  </params>
+</install>

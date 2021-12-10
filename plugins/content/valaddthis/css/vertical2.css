@@ -1,0 +1,40 @@
+/* The following styles are modified from examples at the site of AddThis */
+
+/* Special Toolbox vertical layout #2 with hover effects */
+.addthis_toolbox .addVertical2 {
+	padding: 6px 0;
+	border: 3px solid #eee;
+}
+.addthis_toolbox .addVertical2 a {
+	padding: 4px 0 4px 34px;
+	position: relative;
+	display: block;
+	text-decoration: none;
+	color: blue;
+}
+.addthis_toolbox .addVertical2 a:hover {
+	background: #B4D3F8;
+	text-decoration: none;
+}
+.addthis_toolbox .addVertical2 span {
+	position: absolute;
+	left: 14px;
+	top: 4px;
+}
+.addthis_toolbox .addVertical2 .more {
+	border-top: solid 1px #eee;
+	margin: 6px 0 0;
+	padding: 4px 0 0;
+}
+.addthis_toolbox .addVertical2 .more a {
+	padding: 4px 0 4px 34px;
+	margin: 0;
+}
+.addthis_toolbox .addVertical2 .share {
+	border-bottom: 1px solid #eee;
+	margin: 0 0 6px;
+	padding: 0 0 4px 14px;
+}
+.addthis_toolbox a.at300b {
+	margin-bottom:4px !important;
+}
